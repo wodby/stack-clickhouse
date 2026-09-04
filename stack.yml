@@ -1,0 +1,23 @@
+name: clickhouse
+title: ClickHouse
+icon: clickhouse
+
+services:
+- name: clickhouse
+  title: ClickHouse
+  service: clickhouse
+  required: true
+  volumes:
+  - name: data
+    size: 20
+  workloads:
+  - name: main
+    containers:
+    - name: clickhouse
+      resources:
+        request:
+          cpu: 500
+          memory: 1024
+        limit:
+          cpu: 2000
+          memory: 4096
