@@ -1,6 +1,7 @@
 name: clickhouse
 title: ClickHouse
 icon: clickhouse
+docs: https://wodby.com/docs/2.0/stacks/catalog/clickhouse/
 
 services:
 - name: clickhouse
